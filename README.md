@@ -272,3 +272,6 @@ ORDER BY total_paid DESC, customer_id ASC;
 ```
 
 ---
+
+
+<img width="2435" height="1169" alt="image" src="https://github.com/user-attachments/assets/c847f470-3dbb-4a59-9298-5ab59e8fc317" />
