@@ -20,28 +20,6 @@ ORDER BY LAST_NAME, JOB_CODE;
 
 ---
 
-## 2. Комедии длительностью более 3 часов
-
-**Условие:**
-Выведите название, год выхода и продолжительность комедий длительностью более 180 минут. Отсортируйте по длительности.
-
-**Решение:**
-
-```sql
-SELECT title, release_year, length
-FROM film
-WHERE length > 180
-  AND film_id IN (
-      SELECT film_id
-      FROM film_category
-      WHERE category_id = (
-          SELECT category_id FROM category WHERE name = 'Comedy'
-      )
-  )
-GROUP BY film_id
-ORDER BY length ASC;
-```
-
 ---
 
 ## 3. Сотрудники, принятые в 1992 году
